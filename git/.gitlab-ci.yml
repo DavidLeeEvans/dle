@@ -1,0 +1,20 @@
+haxe:
+  image: haxe:4.2-bullseye
+  stage: test
+  script:
+  - haxelib install --always test.hxml
+  - haxe test.hxml
+
+
+pages:
+  image: python:3.9-alpine
+  before_script: []
+  stage: build
+  only:
+  - master
+  script:
+  - pip install mkdocs pygments mkdocs-material
+  - mkdocs build -s
+  artifacts:
+    paths:
+    - public

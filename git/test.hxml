@@ -1,0 +1,14 @@
+-cp src
+-cp test
+
+--macro include("", true, null, ["src"])
+
+--library hxdefold:1.4.0
+--library json2object
+--library linkedlist
+--library pool
+
+-dce no
+--main TestMain
+
+--lua main.lua

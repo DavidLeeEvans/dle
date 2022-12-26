@@ -1,0 +1,14 @@
+{
+  "name": "dle",
+  "url" : "https://gitlab.com/haath/dex",
+  "license": "MIT",
+  "tags": ["defold", "hxdefold", "ludobits"],
+  "description": "Collection of Haxe externs for ludobits Defold extern libraries.",
+  "version": "0.0.0",
+  "classPath": "src",
+  "releasenote": "Initial release.",
+  "contributors": [ "Evans" ],
+  "dependencies": {
+    "hxdefold": "1.4.0"
+  }
+}

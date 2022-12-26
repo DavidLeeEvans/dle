@@ -1,0 +1,23 @@
+site_name: Fex
+
+site_url: https://gitlab.com/haath/dex
+repo_url: https://gitlab.com/haath/dex
+site_author: Haath
+copyright: Haath
+docs_dir: docs
+site_dir: public
+
+extra_css:
+- css/custom.css
+
+theme:
+  name: 'material'
+
+markdown_extensions:
+- smarty
+- sane_lists
+
+nav:
+- Home: index.md
+- Platformer: platformer.md
+- Data Loader: data_loader.md
